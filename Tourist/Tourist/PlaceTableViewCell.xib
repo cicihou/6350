@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="placeCell" rowHeight="476" id="KGk-i7-Jjw" customClass="PlaceTableViewCell" customModule="Tourist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="192"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paris" translatesAutoresizingMaskIntoConstraints="NO" id="lsG-nz-kPJ">
+                        <rect key="frame" x="5" y="5" width="317" height="137"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ex-58-MhK">
+                        <rect key="frame" x="0.0" y="169" width="327" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="JfH-D9-dr2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Ex-58-MhK" firstAttribute="top" secondItem="lsG-nz-kPJ" secondAttribute="bottom" constant="27" id="4cm-4g-1Hz"/>
+                    <constraint firstAttribute="trailing" secondItem="0Ex-58-MhK" secondAttribute="trailing" id="50b-eO-ofz"/>
+                    <constraint firstItem="lsG-nz-kPJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="AYY-Cp-LNX"/>
+                    <constraint firstItem="0Ex-58-MhK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Bgl-zF-SgY"/>
+                    <constraint firstAttribute="bottom" secondItem="0Ex-58-MhK" secondAttribute="bottom" id="Hhv-XO-wrR"/>
+                    <constraint firstAttribute="trailing" secondItem="0Ex-58-MhK" secondAttribute="trailing" id="OHj-4e-O2f"/>
+                    <constraint firstAttribute="trailing" secondItem="0Ex-58-MhK" secondAttribute="trailing" id="YAg-Pg-JgG"/>
+                    <constraint firstItem="0Ex-58-MhK" firstAttribute="top" secondItem="lsG-nz-kPJ" secondAttribute="bottom" constant="27" id="aSJ-2d-C3b"/>
+                    <constraint firstItem="0Ex-58-MhK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="c4N-Uw-3Ba"/>
+                    <constraint firstItem="0Ex-58-MhK" firstAttribute="top" secondItem="lsG-nz-kPJ" secondAttribute="bottom" constant="5" id="h5m-Mr-dt6"/>
+                    <constraint firstAttribute="bottom" secondItem="0Ex-58-MhK" secondAttribute="bottom" id="p7q-6b-XpM"/>
+                    <constraint firstItem="lsG-nz-kPJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="uJ2-FL-2jU"/>
+                    <constraint firstItem="0Ex-58-MhK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xM8-A2-mWm"/>
+                    <constraint firstAttribute="trailing" secondItem="lsG-nz-kPJ" secondAttribute="trailing" constant="5" id="y3A-Ew-ZAy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="lsG-nz-kPJ" id="nTK-E1-kJa"/>
+                <outlet property="lbl" destination="0Ex-58-MhK" id="dgd-c0-Fxg"/>
+            </connections>
+            <point key="canvasLocation" x="79.230769230769226" y="31.279620853080566"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Paris" width="250" height="172"/>
+    </resources>
+</document>
