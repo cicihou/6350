@@ -1,5 +1,5 @@
 # GetStockPrices
-Type in stock code and you could get the price of stock
+Type in a stock code and you could get its price
 
 # MyFavoriateFood
 A table view for food display
